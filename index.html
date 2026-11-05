@@ -1,454 +1,1504 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Dewa Ongky Putra | Full Stack Web & App Developer</title>
+    <meta
+      content="Portfolio of Dewa Ongky Putra - Innovative Web & App Developer"
+      name="description"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <title>Dewa Ongky Putra</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Tailwind Config Customization -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              cyber: {
+                black: "#0a0d14",
+                dark: "#111622",
+                card: "#161d2f",
+                border: "rgba(23, 210, 109, 0.2)",
+                neon: "#17d26d",
+                glow: "#00ff88",
+                cyan: "#00e5ff",
+                muted: "#8b9bb4",
+              },
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              mono: ["Fira Code", "monospace"],
+            },
+            boxShadow: {
+              neon: "0 0 15px rgba(23, 210, 109, 0.3)",
+              "neon-strong":
+                "0 0 25px rgba(23, 210, 109, 0.6), 0 0 10px rgba(0, 255, 136, 0.4)",
+              glass: "0 8px 32px 0 rgba(0, 0, 0, 0.37)",
+            },
+          },
+        },
+      };
+    </script>
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <style>
-    #typing-text {
-      font-size: 24px;
-      font-family: "Courier New", Courier, monospace;
-      border-right: 1px solid #666;
-      padding-right: 8px;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
-
-      <h1><a href="index.html">Dewa Ongky Putra</a></h1>
-      <h2>I'm <span id="typing-text" style="color: #17d26d;"></span></h2>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link active" href="#header">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#resume">Resume</a></li>
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <div class="social-links">
-        <a href="https://www.facebook.com/dewa.ongkyputra/?locale=id_ID" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/dewaongkyputra/?igshid=ZDdkNTZiNTM%3D" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://id.linkedin.com/in/dewa-ongky-putra-063a83223?trk=people_directory" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
-
-      <div class="section-title">
-        <h2>About</h2>
-        <p>Learn more about me</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/portofolio/my-logo.jpeg" class="img-fluid" alt="">
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>WEB Developer</h3>
-          <p class="fst-italic">
-            Hello! My name is Dewa. I like creating things on the internet, my interest in programming started when I was 16 years old, at that time I liked making Mikrotik login pages using html, css and javascript. a few years later I continued to learn more about programming until now I can create a website-based application.
-          </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>17 March 2002</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+62 857 5813 9972</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Jakarta, Indonesia</span></li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span id="age"></span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>dewaongky77@gmail.com</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <!-- End About Me -->
-
-
-    <!-- ======= Skills  ======= -->
-    <div class="mt-2 skills container">
-
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-
-      <div class="row skills-content">
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">HTML <i class="val">100%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">CSS <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">JavaScript <i class="val">95%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill">Flutter <i class="val">65%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">PHP - Native & Framework <i class="val">100%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">MySQL <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill">Dart <i class="val">60%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div><!-- End Skills -->
-
-  </section><!-- End About Section -->
-
-  <!-- ======= Resume Section ======= -->
-  <section id="resume" class="resume">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Resume</h2>
-        <p>Check My Resume</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6">
-          <h3 class="resume-title">Sumary</h3>
-          <div class="resume-item pb-0">
-            <h4>Dewa Ongky Putra</h4>
-            <p><em>I am passionate about creating cutting-edge digital experiences that blend stunning design with optimized functionality. With a proven track record of developing intuitive web and Android applications, I strive to deliver solutions that not only look amazing, but also provide an unparalleled user experience across all devices.</em></p>
-            <p>
-            <ul>
-              <li>RT.13/RW.6, Kb. Kosong, Kec. Kemayoran, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10630</li>
-              <li>+62 857 5813 9972</li>
-              <li>dewaongky77@gmail.com</li>
-            </ul>
-            </p>
-          </div>
-
-          <h3 class="resume-title">Education</h3>
-          <div class="resume-item">
-            <h4>SMK</h4>
-            <h5>2017 - 2019</h5>
-            <p><em>SMK Negeri 1 Sragi - Lampung Selatan</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>Programmig Course</h4>
-            <h5>2021 - Current</h5>
-            <p><em>Dicoding Indonesia (Java, Dart, Flutter)</em></p>
-            <p><em>Udemy Course (PHP, MySQL)</em></p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <h3 class="resume-title">Experience</h3>
-          <div class="resume-item">
-            <h4>Full Stack Developer</h4>
-            <h5>2020 - Current</h5>
-            <p><em>PT WIKA Industri & Konstruksi | Jakarta </em></p>
-            <p>
-            <ul>
-              <li>Design and implement user-facing features using HTML, CSS, and JavaScript to create responsive and visually appealing web applications.</li>
-              <li>Develop server-side logic, database integration, and RESTful APIs using Codeigniter or Laravel frameworks to support web application functionality.</li>
-              <li>Design and maintain databases, write efficient SQL queries, and ensure data integrity and security across applications.</li>
-              <li>Utilize a version control system such as Git to manage the codebase and track changes.</li>
-              <li>Perform integration testing, and perform code debugging to ensure application reliability and performance.</li>
-              <li>Deploy the application to the production environment, monitor performance, and implement necessary updates and patches to ensure smooth operation.</li>
-              <li>Conduct regular maintenance tasks, such as software updates, patch management, and system backups, to keep the server infrastructure secure and up-to-date.</li>
-            </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>IT Support Specialist Apprentices</h4>
-            <h5>2018 - 2019</h5>
-            <p><em>PT ASDP | Lampung Selatan</em></p>
-            <p>
-            <ul>
-              <li>Install and configure computer hardware, software, cloud system, networks and printers. </li>
-              <li>Perform routine device maintenance. </li>
-              <li>Installing and maintenance barrier gates. </li>
-              <li>Installing and maintenance CCTV. </li>
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section><!-- End Resume Section -->
-
-  <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>PORTOFOLIO</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter=".filter-app">Application</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portofolio/1.png" class="img-fluid pf-img" alt="">
-            <div class="portfolio-info">
-              <h4>SIVIKA</h4>
-              <p>APP</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portofolio/1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="SIVIKA"><i class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portofolio/2.png" class="img-fluid pf-img" alt="">
-            <div class="portfolio-info">
-              <h4>Coffee Haven</h4>
-              <p>Website</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portofolio/2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Coffe Heaven"><i class="bx bx-plus"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portofolio/3.png" class="img-fluid pf-img" alt="">
-            <div class="portfolio-info">
-              <h4>Inventory</h4>
-              <p>APP</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portofolio/3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Inventory"><i class="bx bx-plus"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Portfolio Section -->
-
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contact Me</p>
-      </div>
-
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <p>RT.13/RW.6, Kb. Kosong, Kec. Kemayoran, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10630</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="https://www.facebook.com/dewa.ongkyputra/?locale=id_ID" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/dewaongkyputra/?igshid=ZDdkNTZiNTM%3D" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="https://github.com/dewaop" class="github"><i class="bi bi-github"></i></a>
-              <a href="https://id.linkedin.com/in/dewa-ongky-putra-063a83223?trk=people_directory" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email Me</h3>
-            <p>dewaongky77@gmail.com</p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Call Me</h3>
-            <p>+62 857 5813 9972</p>
-          </div>
-        </div>
-      </div>
-
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
-        </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form>
-
-    </div>
-  </section><!-- End Contact Section -->
-
-  <div class="credits">
-    <a href="https://bootstrapmade.com/">-Dewa Ongky Putra-</a>
-  </div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script>
-// Definisikan teks yang akan diulang-ulang
-const texts = ["Web Developer"];
-      let count = 0; // untuk menghitung indeks teks saat ini
-      let index = 0; // untuk menghitung indeks karakter saat ini
-      let currentText = ""; // teks saat ini yang sedang dikerjakan
-      let letter = ""; // karakter saat ini yang sedang dikerjakan
-
-      // Fungsi animasi teks
-      (function type() {
-        // Jika sudah mencapai akhir teks, ubah menjadi menghapus
-        if (count === texts.length) {
-          count = 0;
-        }
-
-        currentText = texts[count];
-        letter = currentText.slice(0, ++index);
-
-        // Set text pada header
-        document.getElementById("typing-text").textContent = letter;
-
-        // Jika sudah mencapai akhir karakter teks, ubah menjadi menghapus
-        if (letter.length === currentText.length) {
-          count++;
-          index = 0;
-        }
-
-        // Jeda sebelum pengulangan dan panggil kembali fungsi type()
-        setTimeout(type, 400);
-      })();
-    
-    function hitungUsia(tanggalLahir) {
-      const today = new Date();
-      const birthDate = new Date(tanggalLahir);
-      let age = today.getFullYear() - birthDate.getFullYear();
-      const month = today.getMonth() - birthDate.getMonth();
-      if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
+    <style>
+      body {
+        background-color: #0a0d14;
+        color: #e2e8f0;
+        overflow-x: hidden;
       }
-      return age;
-    }
-    
-    //deklarasikan
-    const tanggalLahir = "2002-03-17";
-    const usia = hitungUsia(tanggalLahir);
-    document.getElementById("age").innerHTML = usia;
 
-  </script>
+      .bg-grid-pattern {
+        background-size: 40px 40px;
+        background-image:
+          linear-gradient(
+            to right,
+            rgba(23, 210, 109, 0.05) 1px,
+            transparent 1px
+          ),
+          linear-gradient(
+            to bottom,
+            rgba(23, 210, 109, 0.05) 1px,
+            transparent 1px
+          );
+      }
 
-</body>
+      .scanline {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0) 50%,
+          rgba(0, 0, 0, 0.15) 50%,
+          rgba(0, 0, 0, 0.15)
+        );
+        background-size: 100% 4px;
+        pointer-events: none;
+        z-index: 99;
+        opacity: 0.5;
+      }
 
+      .typing-cursor::after {
+        content: "|";
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+
+      .glass-card {
+        background: rgba(17, 22, 34, 0.75);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(23, 210, 109, 0.18);
+      }
+
+      .glass-card:hover {
+        border-color: rgba(23, 210, 109, 0.5);
+        box-shadow: 0 0 20px rgba(23, 210, 109, 0.2);
+      }
+    </style>
+  </head>
+
+  <body
+    class="font-sans antialiased relative selection:bg-cyber-neon selection:text-black"
+  >
+    <!-- Scanline CRT Overlay -->
+    <div class="scanline"></div>
+
+    <!-- Dynamic Particle Canvas Background -->
+    <canvas
+      id="particleCanvas"
+      class="fixed inset-0 pointer-events-none z-0"
+    ></canvas>
+
+    <!-- Ambient Grid Background -->
+    <div
+      class="fixed inset-0 bg-grid-pattern z-0 opacity-80 pointer-events-none"
+    ></div>
+
+    <!-- Header / Navigation -->
+    <header
+      class="sticky top-0 z-50 glass-card border-b border-cyber-border/40 px-4 lg:px-8 py-3 transition-all duration-300"
+    >
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center space-x-2 group">
+          <div
+            class="w-9 h-9 rounded-lg bg-cyber-neon/10 border border-cyber-neon flex items-center justify-center group-hover:shadow-neon transition"
+          >
+            <i class="fa-solid fa-terminal text-cyber-neon text-sm"></i>
+          </div>
+          <span
+            class="font-mono text-lg font-bold tracking-tight text-white group-hover:text-cyber-neon transition"
+          >
+            DEWA<span class="text-cyber-neon">.DEV</span>
+          </span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav
+          class="hidden md:flex items-center space-x-8 font-mono text-xs uppercase tracking-wider"
+        >
+          <a
+            href="#home"
+            class="hover:text-cyber-neon transition text-cyber-neon"
+            >01. Home</a
+          >
+          <a
+            href="#about"
+            class="hover:text-cyber-neon transition text-gray-300"
+            >02. About</a
+          >
+          <a
+            href="#skills"
+            class="hover:text-cyber-neon transition text-gray-300"
+            >03. Skills & Certs</a
+          >
+          <a
+            href="#experience"
+            class="hover:text-cyber-neon transition text-gray-300"
+            >04. Experience</a
+          >
+          <a
+            href="#portfolio"
+            class="hover:text-cyber-neon transition text-gray-300"
+            >05. Projects</a
+          >
+          <a
+            href="#contact"
+            class="hover:text-cyber-neon transition text-gray-300"
+            >06. Contact</a
+          >
+        </nav>
+
+        <!-- Action Button -->
+        <div class="hidden sm:flex items-center space-x-3">
+          <a
+            href="#contact"
+            class="font-mono text-xs px-4 py-2 rounded border border-cyber-neon text-cyber-neon hover:bg-cyber-neon hover:text-black transition duration-300 shadow-neon"
+          >
+            <i class="fa-solid fa-code-branch mr-1.5"></i>CONNECT
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobileMenuBtn"
+          class="md:hidden text-gray-300 hover:text-cyber-neon text-xl focus:outline-none"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden mt-4 pt-4 border-t border-cyber-border/40 font-mono text-sm space-y-3 pb-2"
+      >
+        <a
+          href="#home"
+          class="block px-2 py-1 text-cyber-neon hover:bg-cyber-neon/10 rounded"
+          >// 01. Home</a
+        >
+        <a
+          href="#about"
+          class="block px-2 py-1 text-gray-300 hover:bg-cyber-neon/10 rounded"
+          >// 02. About</a
+        >
+        <a
+          href="#skills"
+          class="block px-2 py-1 text-gray-300 hover:bg-cyber-neon/10 rounded"
+          >// 03. Skills & Certs</a
+        >
+        <a
+          href="#experience"
+          class="block px-2 py-1 text-gray-300 hover:bg-cyber-neon/10 rounded"
+          >// 04. Experience</a
+        >
+        <a
+          href="#portfolio"
+          class="block px-2 py-1 text-gray-300 hover:bg-cyber-neon/10 rounded"
+          >// 05. Projects</a
+        >
+        <a
+          href="#contact"
+          class="block px-2 py-1 text-gray-300 hover:bg-cyber-neon/10 rounded"
+          >// 06. Contact</a
+        >
+      </div>
+    </header>
+
+    <main
+      class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24 pt-8 pb-20"
+    >
+      <!-- HERO SECTION -->
+      <section id="home" class="min-h-[85vh] flex flex-col justify-center pt-4">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <!-- Hero Text -->
+          <div class="lg:col-span-7 space-y-6">
+            <div
+              class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyber-neon/10 border border-cyber-neon/40 text-cyber-neon font-mono text-xs"
+            >
+              <span
+                class="w-2 h-2 rounded-full bg-cyber-neon animate-pulse"
+              ></span>
+              <span>CRAFTING SEAMLESS DIGITAL SOLUTIONS</span>
+            </div>
+
+            <div class="space-y-2">
+              <h1
+                class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight"
+              >
+                Dewa Ongky
+                <span
+                  class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-neon via-cyber-glow to-cyber-cyan"
+                  >Putra</span
+                >
+              </h1>
+              <div
+                class="font-mono text-lg sm:text-2xl text-cyber-muted h-12 flex items-center"
+              >
+                <span class="text-cyber-neon mr-2 font-bold">&gt;</span>
+                <span
+                  id="typing-text"
+                  class="text-gray-200 typing-cursor"
+                ></span>
+              </div>
+            </div>
+
+            <p
+              class="text-gray-300 text-base sm:text-lg max-w-2xl leading-relaxed italic border-l-2 border-cyber-neon/50 pl-4"
+            >
+              "Welcome to my profile! I am passionate about creating
+              cutting-edge digital experiences that blend stunning design with
+              optimized functionality. With a proven track record of developing
+              intuitive web and Android applications, I strive to deliver
+              solutions that not only look amazing, but also provide an
+              unparalleled user experience across all devices."
+            </p>
+
+            <!-- Social Links & Action -->
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <a
+                href="#portfolio"
+                class="px-6 py-3 rounded bg-cyber-neon text-black font-mono font-bold text-sm hover:bg-cyber-glow transition duration-300 flex items-center shadow-neon"
+              >
+                <i class="fa-solid fa-folder-open mr-2"></i> VIEW PORTFOLIO
+              </a>
+              <a
+                href="#contact"
+                class="px-6 py-3 rounded border border-cyber-border text-gray-300 font-mono text-sm hover:border-cyber-neon hover:text-cyber-neon transition duration-300"
+              >
+                <i class="fa-solid fa-paper-plane mr-2"></i> GET IN TOUCH
+              </a>
+
+              <div
+                class="flex items-center space-x-3 sm:ml-2 border-t sm:border-t-0 sm:border-l border-gray-800 pt-3 sm:pt-0 sm:pl-4 w-full sm:w-auto"
+              >
+                <a
+                  href="https://github.com/dewaop"
+                  target="_blank"
+                  title="GitHub"
+                  class="w-10 h-10 rounded glass-card flex items-center justify-center text-gray-400 hover:text-cyber-neon hover:scale-110 transition"
+                >
+                  <i class="fa-brands fa-github text-lg"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/dewa-ongky-putra-063a83223"
+                  target="_blank"
+                  title="LinkedIn"
+                  class="w-10 h-10 rounded glass-card flex items-center justify-center text-gray-400 hover:text-cyber-neon hover:scale-110 transition"
+                >
+                  <i class="fa-brands fa-linkedin-in text-lg"></i>
+                </a>
+                <a
+                  href="mailto:dewaongky77@gmail.com"
+                  title="Email"
+                  class="w-10 h-10 rounded glass-card flex items-center justify-center text-gray-400 hover:text-cyber-neon hover:scale-110 transition"
+                >
+                  <i class="fa-solid fa-envelope text-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Terminal Console Display -->
+          <div class="lg:col-span-5">
+            <div
+              class="glass-card rounded-xl overflow-hidden border border-cyber-border shadow-2xl"
+            >
+              <!-- Terminal Header -->
+              <div
+                class="bg-cyber-dark/90 px-4 py-3 border-b border-cyber-border/40 flex items-center justify-between"
+              >
+                <div class="flex items-center space-x-2">
+                  <span
+                    class="w-3 h-3 rounded-full bg-red-500/80 inline-block"
+                  ></span>
+                  <span
+                    class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"
+                  ></span>
+                  <span
+                    class="w-3 h-3 rounded-full bg-green-500/80 inline-block"
+                  ></span>
+                </div>
+                <span class="font-mono text-xs text-cyber-muted"
+                  >dewa@op-node:~</span
+                >
+                <i class="fa-solid fa-microchip text-cyber-neon text-xs"></i>
+              </div>
+
+              <!-- Terminal Body -->
+              <div
+                class="p-5 font-mono text-xs sm:text-sm space-y-3 text-gray-300"
+              >
+                <div class="text-cyber-muted">// SYSTEM PROFILE & STATUS</div>
+                <div>
+                  <span class="text-cyber-neon">dewa@root:~$</span>
+                  fetch-profile --json
+                </div>
+                <div
+                  class="pl-3 border-l-2 border-cyber-neon/30 space-y-1 text-gray-400"
+                >
+                  <p>
+                    <span class="text-cyber-cyan">"developer"</span>:
+                    <span class="text-emerald-300">"Dewa Ongky Putra"</span>,
+                  </p>
+                  <p>
+                    <span class="text-cyber-cyan">"role"</span>:
+                    <span class="text-emerald-300">"Full Stack Developer"</span
+                    >,
+                  </p>
+                  <p>
+                    <span class="text-cyber-cyan">"location"</span>:
+                    <span class="text-emerald-300">"Jakarta, Indonesia"</span>,
+                  </p>
+                  <p>
+                    <span class="text-cyber-cyan">"frameworks"</span>: [<span
+                      class="text-emerald-300"
+                      >"Laravel"</span
+                    >, <span class="text-emerald-300">"CodeIgniter"</span>,
+                    <span class="text-emerald-300">"Flutter"</span>],
+                  </p>
+                  <p>
+                    <span class="text-cyber-cyan">"languages"</span>: [<span
+                      class="text-emerald-300"
+                      >"PHP"</span
+                    >, <span class="text-emerald-300">"JavaScript"</span>,
+                    <span class="text-emerald-300">"Kotlin"</span>,
+                    <span class="text-emerald-300">"Dart"</span>],
+                  </p>
+                  <p>
+                    <span class="text-cyber-cyan">"vcs"</span>:
+                    <span class="text-cyber-neon">"Git / GitHub Workflow"</span>
+                  </p>
+                </div>
+
+                <div class="pt-2">
+                  <span class="text-cyber-neon">dewa@root:~$</span>
+                  <span class="text-white animate-pulse">_</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="space-y-8">
+        <div class="flex items-center space-x-4">
+          <h2
+            class="text-2xl sm:text-3xl font-bold font-mono text-white flex items-center"
+          >
+            <span class="text-cyber-neon mr-2">02.</span> ABOUT_ME
+          </h2>
+          <div class="h-px bg-cyber-border flex-grow"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div class="lg:col-span-2 glass-card p-6 sm:p-8 rounded-xl space-y-4">
+            <p class="text-gray-300 leading-relaxed text-base sm:text-lg">
+              I am a
+              <strong class="text-cyber-neon font-mono"
+                >Full Stack Developer & IT Specialist</strong
+              >
+              based in Jakarta, Indonesia. With over 6 years of experience
+              across web application development and IT infrastructure
+              engineering, I specialize in engineering reliable software
+              ecosystems end-to-end.
+            </p>
+            <p class="text-gray-400 leading-relaxed">
+              From architecting enterprise backend logic with
+              <span class="text-cyber-cyan font-mono"
+                >Laravel & CodeIgniter</span
+              >
+              to deploying robust MySQL databases and crafting mobile
+              applications in
+              <span class="text-purple-400 font-mono">Kotlin & Flutter</span>, I
+              combine clean code principles with user-centric UI design.
+            </p>
+
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-cyber-border/40 font-mono text-xs sm:text-sm"
+            >
+              <div class="flex items-center space-x-3 text-gray-300">
+                <i class="fa-solid fa-location-dot text-cyber-neon"></i>
+                <span>Jakarta Raya, Indonesia</span>
+              </div>
+              <div class="flex items-center space-x-3 text-gray-300">
+                <i class="fa-solid fa-envelope text-cyber-neon"></i>
+                <span>dewaongky77@gmail.com</span>
+              </div>
+              <div class="flex items-center space-x-3 text-gray-300">
+                <i class="fa-brands fa-linkedin text-cyber-neon"></i>
+                <span>linkedin.com/in/dewa-ongky-putra-063a83223</span>
+              </div>
+              <div class="flex items-center space-x-3 text-gray-300">
+                <i class="fa-solid fa-shield-halved text-cyber-neon"></i>
+                <span>Certified in AI & Cybersecurity Basics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Stats Matrix -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+            <div
+              class="glass-card p-5 rounded-xl border-l-4 border-l-cyber-neon flex items-center justify-between"
+            >
+              <div>
+                <div class="text-cyber-muted font-mono text-xs uppercase">
+                  PT WIKA Career Tenure
+                </div>
+                <div class="text-3xl font-bold font-mono text-white mt-1">
+                  6+ Years
+                </div>
+              </div>
+              <i
+                class="fa-solid fa-building text-cyber-neon text-3xl opacity-60"
+              ></i>
+            </div>
+
+            <div
+              class="glass-card p-5 rounded-xl border-l-4 border-l-cyber-cyan flex items-center justify-between"
+            >
+              <div>
+                <div class="text-cyber-muted font-mono text-xs uppercase">
+                  Core Stack
+                </div>
+                <div class="text-xl font-bold font-mono text-white mt-1">
+                  PHP / JS / Mobile
+                </div>
+              </div>
+              <i
+                class="fa-solid fa-code text-cyber-cyan text-3xl opacity-60"
+              ></i>
+            </div>
+
+            <div
+              class="glass-card p-5 rounded-xl border-l-4 border-l-purple-500 flex items-center justify-between"
+            >
+              <div>
+                <div class="text-cyber-muted font-mono text-xs uppercase">
+                  Dev Certifications
+                </div>
+                <div class="text-3xl font-bold font-mono text-white mt-1">
+                  4 Badges
+                </div>
+              </div>
+              <i
+                class="fa-solid fa-award text-purple-400 text-3xl opacity-60"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS & CERTIFICATIONS SECTION -->
+      <section id="skills" class="space-y-8">
+        <div class="flex items-center space-x-4">
+          <h2
+            class="text-2xl sm:text-3xl font-bold font-mono text-white flex items-center"
+          >
+            <span class="text-cyber-neon mr-2">03.</span>
+            SKILLS_&_CERTIFICATIONS
+          </h2>
+          <div class="h-px bg-cyber-border flex-grow"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Skill Group 1: Web Development -->
+          <div class="glass-card p-6 rounded-xl space-y-4">
+            <div
+              class="flex items-center space-x-3 border-b border-cyber-border/40 pb-3"
+            >
+              <div class="p-2 rounded bg-cyber-neon/10 text-cyber-neon">
+                <i class="fa-solid fa-layer-group text-xl"></i>
+              </div>
+              <h3 class="font-mono text-lg font-bold text-white">
+                Full-Stack Web
+              </h3>
+            </div>
+            <ul class="space-y-2.5 font-mono text-xs text-gray-300">
+              <li class="flex items-center justify-between">
+                <span class="flex items-center"
+                  ><i class="fa-solid fa-check text-cyber-neon mr-2"></i>PHP
+                  (Laravel & CodeIgniter)</span
+                >
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center"
+                  ><i class="fa-solid fa-check text-cyber-neon mr-2"></i>HTML5,
+                  CSS3 & JavaScript</span
+                >
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center"
+                  ><i class="fa-solid fa-check text-cyber-neon mr-2"></i>MySQL &
+                  Database Architecture</span
+                >
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center"
+                  ><i class="fa-solid fa-check text-cyber-neon mr-2"></i>RESTful
+                  API Design & Integration</span
+                >
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center"
+                  ><i class="fa-solid fa-check text-cyber-neon mr-2"></i
+                  >Bootstrap & Modern CSS</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Group 2: Mobile & Tools -->
+          <div class="glass-card p-6 rounded-xl space-y-4">
+            <div
+              class="flex items-center space-x-3 border-b border-cyber-border/40 pb-3"
+            >
+              <div class="p-2 rounded bg-cyber-cyan/10 text-cyber-cyan">
+                <i class="fa-solid fa-mobile-screen-button text-xl"></i>
+              </div>
+              <h3 class="font-mono text-lg font-bold text-white">
+                Mobile & DevOps
+              </h3>
+            </div>
+            <ul class="space-y-2.5 font-mono text-xs text-gray-300">
+              <li class="flex items-center justify-between">
+                <span class="flex items-center"
+                  ><i class="fa-solid fa-check text-cyber-cyan mr-2"></i>Android
+                  Studio & Kotlin</span
+                >
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center"
+                  ><i class="fa-solid fa-check text-cyber-cyan mr-2"></i>Dart &
+                  Flutter Apps</span
+                >
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center"
+                  ><i class="fa-solid fa-check text-cyber-cyan mr-2"></i>Git &
+                  GitHub Version Control</span
+                >
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center"
+                  ><i class="fa-solid fa-check text-cyber-cyan mr-2"></i>Web
+                  Hosting Maintenance & CI/CD</span
+                >
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center"
+                  ><i class="fa-solid fa-check text-cyber-cyan mr-2"></i>System
+                  Backup & Security Patching</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Skill Group 3: Certifications -->
+          <div class="glass-card p-6 rounded-xl space-y-4">
+            <div
+              class="flex items-center space-x-3 border-b border-cyber-border/40 pb-3"
+            >
+              <div class="p-2 rounded bg-purple-500/10 text-purple-400">
+                <i class="fa-solid fa-certificate text-xl"></i>
+              </div>
+              <h3 class="font-mono text-lg font-bold text-white">
+                Certifications
+              </h3>
+            </div>
+            <ul class="space-y-3 font-mono text-xs text-gray-300">
+              <li class="flex items-start">
+                <i
+                  class="fa-solid fa-shield-virus text-purple-400 mr-2 mt-0.5"
+                ></i>
+                <span><strong>Introduction to Cybersecurity</strong></span>
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-brain text-purple-400 mr-2 mt-0.5"></i>
+                <span><strong>Belajar Dasar AI</strong></span>
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-code text-purple-400 mr-2 mt-0.5"></i>
+                <span><strong>Memulai Pemrograman dengan Dart</strong></span>
+              </li>
+              <li class="flex items-start">
+                <i
+                  class="fa-solid fa-mobile-retro text-purple-400 mr-2 mt-0.5"
+                ></i>
+                <span
+                  ><strong
+                    >Belajar Membuat Aplikasi Flutter untuk Pemula</strong
+                  ></span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE SECTION -->
+      <section id="experience" class="space-y-8">
+        <div class="flex items-center space-x-4">
+          <h2
+            class="text-2xl sm:text-3xl font-bold font-mono text-white flex items-center"
+          >
+            <span class="text-cyber-neon mr-2">04.</span> WORK_EXPERIENCE
+          </h2>
+          <div class="h-px bg-cyber-border flex-grow"></div>
+        </div>
+
+        <div
+          class="relative border-l-2 border-cyber-border pl-6 space-y-8 max-w-5xl mx-auto"
+        >
+          <!-- Experience Item 1: WIKA Full Stack -->
+          <div class="relative group">
+            <div
+              class="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-cyber-black border-2 border-cyber-neon group-hover:bg-cyber-neon transition"
+            ></div>
+            <div class="glass-card p-6 rounded-lg space-y-3">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <h3 class="font-bold text-white text-lg">
+                  Full Stack Developer
+                </h3>
+                <span
+                  class="font-mono text-xs px-2.5 py-0.5 rounded bg-cyber-neon/10 text-cyber-neon border border-cyber-neon/30"
+                  >Nov 2023 - Present</span
+                >
+              </div>
+              <div class="text-sm text-cyber-muted font-mono">
+                PT Wijaya Karya Industri & Konstruksi | Jakarta Timur, Indonesia
+              </div>
+
+              <ul
+                class="text-xs sm:text-sm text-gray-300 space-y-2 list-disc list-inside pt-2"
+              >
+                <li>
+                  <strong>Frontend Development:</strong> Designed and
+                  implemented user-facing features using HTML, CSS, and
+                  JavaScript for responsive web applications.
+                </li>
+                <li>
+                  <strong>Backend Development:</strong> Developed server-side
+                  logic, database integrations, and RESTful APIs using
+                  CodeIgniter and Laravel.
+                </li>
+                <li>
+                  <strong>Database Management:</strong> Designed databases,
+                  wrote optimized SQL queries, and ensured data integrity and
+                  security.
+                </li>
+                <li>
+                  <strong>Version Control & Testing:</strong> Utilized Git
+                  workflow for code management, integration testing, and
+                  debugging.
+                </li>
+                <li>
+                  <strong>Deployment & Server Maintenance:</strong> Managed
+                  production deployments, web hosting maintenance, software
+                  updates, and backups.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience Item 2: Fukuda Technology -->
+          <div class="relative group">
+            <div
+              class="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-cyber-black border-2 border-cyber-cyan group-hover:bg-cyber-cyan transition"
+            ></div>
+            <div class="glass-card p-6 rounded-lg space-y-3">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <h3 class="font-bold text-white text-lg">
+                  Full Stack Developer
+                </h3>
+                <span
+                  class="font-mono text-xs px-2.5 py-0.5 rounded bg-cyber-cyan/10 text-cyber-cyan border border-cyber-cyan/30"
+                  >Jul 2023 - Sep 2023</span
+                >
+              </div>
+              <div class="text-sm text-cyber-muted font-mono">
+                Fukuda Technology | Cikarang, Jawa Barat, Indonesia
+              </div>
+
+              <ul
+                class="text-xs sm:text-sm text-gray-300 space-y-2 list-disc list-inside pt-2"
+              >
+                <li>
+                  Continued software development for an instrumentation tool,
+                  leading the integration of a pivotal
+                  <strong>calibration module</strong>.
+                </li>
+                <li>
+                  Conceptualized and implemented user-centric workflows
+                  empowering users to effortlessly calibrate instruments with
+                  high accuracy.
+                </li>
+                <li>
+                  Rigorously tested calibration scenarios to ensure compliance
+                  with industry standards and regulatory requirements.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience Item 3: WIKA IT Support -->
+          <div class="relative group">
+            <div
+              class="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-cyber-black border-2 border-yellow-400 group-hover:bg-yellow-400 transition"
+            ></div>
+            <div class="glass-card p-6 rounded-lg space-y-3">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <h3 class="font-bold text-white text-lg">
+                  IT Support Technician
+                </h3>
+                <span
+                  class="font-mono text-xs px-2.5 py-0.5 rounded bg-yellow-500/10 text-yellow-400 border border-yellow-500/30"
+                  >Aug 2020 - Oct 2023</span
+                >
+              </div>
+              <div class="text-sm text-cyber-muted font-mono">
+                PT Wijaya Karya Industri & Konstruksi | Majalengka, Jawa Barat,
+                Indonesia
+              </div>
+
+              <ul
+                class="text-xs sm:text-sm text-gray-300 space-y-2 list-disc list-inside pt-2"
+              >
+                <li>
+                  Provided technical troubleshooting for internal users across
+                  hardware, software, networks, and corporate applications.
+                </li>
+                <li>
+                  Configured and maintained computer hardware, operating
+                  systems, and utilities.
+                </li>
+                <li>
+                  Monitored network performance, managed IT inventory, and
+                  enforced information security policies.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience Item 4: ASDP Apprentice -->
+          <div class="relative group">
+            <div
+              class="absolute -left-[31px] top-0 w-4 h-4 rounded-full bg-cyber-black border-2 border-gray-600 group-hover:border-cyber-neon transition"
+            ></div>
+            <div class="glass-card p-6 rounded-lg space-y-3">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <h3 class="font-bold text-white text-lg">
+                  IT Support Specialist Apprentice
+                </h3>
+                <span
+                  class="font-mono text-xs px-2.5 py-0.5 rounded bg-gray-800 text-gray-400"
+                  >2018 - 2019</span
+                >
+              </div>
+              <div class="text-sm text-cyber-muted font-mono">
+                PT ASDP | Lampung Selatan, Indonesia
+              </div>
+
+              <p class="text-xs sm:text-sm text-gray-300">
+                Installed computer hardware, configured network nodes, managed
+                routine maintenance on barrier gates, and maintained CCTV
+                systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO SECTION -->
+      <section id="portfolio" class="space-y-8">
+        <div class="flex items-center space-x-4">
+          <h2
+            class="text-2xl sm:text-3xl font-bold font-mono text-white flex items-center"
+          >
+            <span class="text-cyber-neon mr-2">05.</span> FEATURED_PROJECTS
+          </h2>
+          <div class="h-px bg-cyber-border flex-grow"></div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Project 1: General Affair -->
+          <div
+            class="glass-card rounded-xl overflow-hidden group border border-cyber-border flex flex-col justify-between"
+          >
+            <div class="p-6 space-y-4">
+              <div class="flex justify-between items-start">
+                <div
+                  class="p-3 rounded bg-cyber-neon/10 text-cyber-neon font-mono text-2xl"
+                >
+                  <i class="fa-solid fa-building-user"></i>
+                </div>
+                <span
+                  class="font-mono text-xs px-2 py-1 bg-cyber-neon/10 text-cyber-neon border border-cyber-neon/30 rounded"
+                  >ENTERPRISE APP</span
+                >
+              </div>
+              <h3
+                class="text-xl font-bold text-white group-hover:text-cyber-neon transition"
+              >
+                General Affair System
+              </h3>
+              <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                Custom operational management system developed for corporate
+                asset allocation, inventory tracking, facility maintenance logs,
+                and request approvals.
+              </p>
+              <div
+                class="flex flex-wrap gap-2 pt-2 font-mono text-xs text-cyber-cyan"
+              >
+                <span
+                  class="px-2 py-1 bg-cyber-dark rounded border border-cyber-border"
+                  >PHP</span
+                >
+                <span
+                  class="px-2 py-1 bg-cyber-dark rounded border border-cyber-border"
+                  >Laravel</span
+                >
+                <span
+                  class="px-2 py-1 bg-cyber-dark rounded border border-cyber-border"
+                  >MySQL</span
+                >
+                <span
+                  class="px-2 py-1 bg-cyber-dark rounded border border-cyber-border"
+                  >Bootstrap</span
+                >
+              </div>
+            </div>
+            <div
+              class="px-6 py-4 bg-cyber-dark/60 border-t border-cyber-border/40 flex justify-between items-center text-xs font-mono"
+            >
+              <span class="text-gray-400"
+                ><i class="fa-solid fa-lock text-cyber-neon mr-1"></i> Internal
+                System</span
+              >
+              <span class="text-cyber-neon flex items-center"
+                >Deployed @ PT WIKA</span
+              >
+            </div>
+          </div>
+
+          <!-- Project 2: Akuntansi System -->
+          <div
+            class="glass-card rounded-xl overflow-hidden group border border-cyber-border flex flex-col justify-between"
+          >
+            <div class="p-6 space-y-4">
+              <div class="flex justify-between items-start">
+                <div
+                  class="p-3 rounded bg-cyber-cyan/10 text-cyber-cyan font-mono text-2xl"
+                >
+                  <i class="fa-solid fa-calculator"></i>
+                </div>
+                <span
+                  class="font-mono text-xs px-2 py-1 bg-cyber-cyan/10 text-cyber-cyan border border-cyber-cyan/30 rounded"
+                  >FINANCE APP</span
+                >
+              </div>
+              <h3
+                class="text-xl font-bold text-white group-hover:text-cyber-cyan transition"
+              >
+                Akuntansi & Accounting Portal
+              </h3>
+              <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                Financial ledger and journal balancing tool providing structured
+                accounting entries, expense tracking, financial dashboarding,
+                and audit logging.
+              </p>
+              <div
+                class="flex flex-wrap gap-2 pt-2 font-mono text-xs text-cyber-cyan"
+              >
+                <span
+                  class="px-2 py-1 bg-cyber-dark rounded border border-cyber-border"
+                  >CodeIgniter</span
+                >
+                <span
+                  class="px-2 py-1 bg-cyber-dark rounded border border-cyber-border"
+                  >MySQL</span
+                >
+                <span
+                  class="px-2 py-1 bg-cyber-dark rounded border border-cyber-border"
+                  >JavaScript</span
+                >
+              </div>
+            </div>
+            <div
+              class="px-6 py-4 bg-cyber-dark/60 border-t border-cyber-border/40 flex justify-between items-center text-xs font-mono"
+            >
+              <span class="text-gray-400"
+                ><i class="fa-solid fa-lock text-cyber-cyan mr-1"></i> Internal
+                System</span
+              >
+              <span class="text-cyber-cyan flex items-center"
+                >Deployed @ PT WIKA</span
+              >
+            </div>
+          </div>
+
+          <!-- Project 3: Purchasing Order -->
+          <div
+            class="glass-card rounded-xl overflow-hidden group border border-cyber-border flex flex-col justify-between"
+          >
+            <div class="p-6 space-y-4">
+              <div class="flex justify-between items-start">
+                <div
+                  class="p-3 rounded bg-yellow-500/10 text-yellow-400 font-mono text-2xl"
+                >
+                  <i class="fa-solid fa-cart-flatbed"></i>
+                </div>
+                <span
+                  class="font-mono text-xs px-2 py-1 bg-yellow-500/10 text-yellow-400 border border-yellow-500/30 rounded"
+                  >PROCUREMENT</span
+                >
+              </div>
+              <h3
+                class="text-xl font-bold text-white group-hover:text-yellow-400 transition"
+              >
+                Purchasing Order Workflow
+              </h3>
+              <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                Streamlined procurement application handling vendor management,
+                purchase order generation, itemized verification, and real-time
+                approval tracking.
+              </p>
+              <div
+                class="flex flex-wrap gap-2 pt-2 font-mono text-xs text-cyber-cyan"
+              >
+                <span
+                  class="px-2 py-1 bg-cyber-dark rounded border border-cyber-border"
+                  >PHP</span
+                >
+                <span
+                  class="px-2 py-1 bg-cyber-dark rounded border border-cyber-border"
+                  >REST API</span
+                >
+                <span
+                  class="px-2 py-1 bg-cyber-dark rounded border border-cyber-border"
+                  >MySQL</span
+                >
+              </div>
+            </div>
+            <div
+              class="px-6 py-4 bg-cyber-dark/60 border-t border-cyber-border/40 flex justify-between items-center text-xs font-mono"
+            >
+              <span class="text-gray-400"
+                ><i class="fa-solid fa-lock text-yellow-400 mr-1"></i> Internal
+                System</span
+              >
+              <span class="text-yellow-400 flex items-center"
+                >Deployed @ PT WIKA</span
+              >
+            </div>
+          </div>
+
+          <!-- Project 4: QSHE System -->
+          <div
+            class="glass-card rounded-xl overflow-hidden group border border-cyber-border flex flex-col justify-between"
+          >
+            <div class="p-6 space-y-4">
+              <div class="flex justify-between items-start">
+                <div
+                  class="p-3 rounded bg-purple-500/10 text-purple-400 font-mono text-2xl"
+                >
+                  <i class="fa-solid fa-shield-heart"></i>
+                </div>
+                <span
+                  class="font-mono text-xs px-2 py-1 bg-purple-500/10 text-purple-400 border border-purple-500/30 rounded"
+                  >SAFETY & COMPLIANCE</span
+                >
+              </div>
+              <h3
+                class="text-xl font-bold text-white group-hover:text-purple-400 transition"
+              >
+                QSHE Reporting System
+              </h3>
+              <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                Quality, Health, Safety & Environment reporting platform
+                allowing field incident reporting, safety inspection logs, and
+                compliance analytics.
+              </p>
+              <div
+                class="flex flex-wrap gap-2 pt-2 font-mono text-xs text-cyber-cyan"
+              >
+                <span
+                  class="px-2 py-1 bg-cyber-dark rounded border border-cyber-border"
+                  >CodeIgniter</span
+                >
+                <span
+                  class="px-2 py-1 bg-cyber-dark rounded border border-cyber-border"
+                  >MySQL</span
+                >
+                <span
+                  class="px-2 py-1 bg-cyber-dark rounded border border-cyber-border"
+                  >JS / Charting</span
+                >
+              </div>
+            </div>
+            <div
+              class="px-6 py-4 bg-cyber-dark/60 border-t border-cyber-border/40 flex justify-between items-center text-xs font-mono"
+            >
+              <span class="text-gray-400"
+                ><i class="fa-solid fa-lock text-purple-400 mr-1"></i> Internal
+                System</span
+              >
+              <span class="text-purple-400 flex items-center"
+                >Deployed @ PT WIKA</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="space-y-8">
+        <div class="flex items-center space-x-4">
+          <h2
+            class="text-2xl sm:text-3xl font-bold font-mono text-white flex items-center"
+          >
+            <span class="text-cyber-neon mr-2">06.</span> INITIALIZE_CONTACT
+          </h2>
+          <div class="h-px bg-cyber-border flex-grow"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <!-- Contact Cards -->
+          <div class="lg:col-span-5 space-y-4">
+            <div
+              class="glass-card p-5 rounded-xl flex items-center space-x-4 border-l-4 border-l-cyber-neon"
+            >
+              <div
+                class="w-12 h-12 rounded bg-cyber-neon/10 flex items-center justify-center text-cyber-neon text-xl font-mono"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <div class="font-mono text-xs text-cyber-muted uppercase">
+                  Location
+                </div>
+                <div class="text-sm font-semibold text-white">
+                  Jakarta Raya, Indonesia
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="glass-card p-5 rounded-xl flex items-center space-x-4 border-l-4 border-l-cyber-cyan"
+            >
+              <div
+                class="w-12 h-12 rounded bg-cyber-cyan/10 flex items-center justify-center text-cyber-cyan text-xl font-mono"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <div class="font-mono text-xs text-cyber-muted uppercase">
+                  Email
+                </div>
+                <a
+                  href="mailto:dewaongky77@gmail.com"
+                  class="text-sm font-semibold text-white hover:text-cyber-cyan transition"
+                  >dewaongky77@gmail.com</a
+                >
+              </div>
+            </div>
+
+            <div
+              class="glass-card p-5 rounded-xl flex items-center space-x-4 border-l-4 border-l-purple-500"
+            >
+              <div
+                class="w-12 h-12 rounded bg-purple-500/10 flex items-center justify-center text-purple-400 text-xl font-mono"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div>
+                <div class="font-mono text-xs text-cyber-muted uppercase">
+                  LinkedIn Profile
+                </div>
+                <a
+                  href="https://www.linkedin.com/in/dewa-ongky-putra-063a83223"
+                  target="_blank"
+                  class="text-sm font-semibold text-white hover:text-purple-400 transition"
+                  >linkedin.com/in/dewa-ongky-putra-063a83223</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="lg:col-span-7">
+            <form
+              id="contactForm"
+              class="glass-card p-6 sm:p-8 rounded-xl space-y-5 border border-cyber-border"
+            >
+              <div
+                class="font-mono text-sm text-cyber-neon border-b border-cyber-border/40 pb-3 flex items-center justify-between"
+              >
+                <span>&gt; TRANSMIT_MESSAGE</span>
+                <span class="text-xs text-cyber-muted">STATUS: READY</span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="space-y-1.5">
+                  <label
+                    for="name"
+                    class="block font-mono text-xs text-gray-300"
+                    >YOUR NAME *</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    required
+                    placeholder="John Doe"
+                    class="w-full px-4 py-3 rounded bg-cyber-dark/80 border border-cyber-border text-white text-sm focus:outline-none focus:border-cyber-neon focus:ring-1 focus:ring-cyber-neon transition"
+                  />
+                </div>
+                <div class="space-y-1.5">
+                  <label
+                    for="email"
+                    class="block font-mono text-xs text-gray-300"
+                    >YOUR EMAIL *</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    required
+                    placeholder="john@example.com"
+                    class="w-full px-4 py-3 rounded bg-cyber-dark/80 border border-cyber-border text-white text-sm focus:outline-none focus:border-cyber-neon focus:ring-1 focus:ring-cyber-neon transition"
+                  />
+                </div>
+              </div>
+
+              <div class="space-y-1.5">
+                <label
+                  for="subject"
+                  class="block font-mono text-xs text-gray-300"
+                  >SUBJECT *</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  required
+                  placeholder="Project Inquiry / Opportunity"
+                  class="w-full px-4 py-3 rounded bg-cyber-dark/80 border border-cyber-border text-white text-sm focus:outline-none focus:border-cyber-neon focus:ring-1 focus:ring-cyber-neon transition"
+                />
+              </div>
+
+              <div class="space-y-1.5">
+                <label
+                  for="message"
+                  class="block font-mono text-xs text-gray-300"
+                  >MESSAGE *</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  required
+                  placeholder="Type your message payload..."
+                  class="w-full px-4 py-3 rounded bg-cyber-dark/80 border border-cyber-border text-white text-sm focus:outline-none focus:border-cyber-neon focus:ring-1 focus:ring-cyber-neon transition"
+                ></textarea>
+              </div>
+
+              <div
+                id="formFeedback"
+                class="hidden p-4 rounded text-xs font-mono"
+              ></div>
+
+              <button
+                type="submit"
+                class="w-full py-3.5 rounded bg-cyber-neon text-black font-mono font-bold text-sm hover:bg-cyber-glow transition duration-300 flex items-center justify-center space-x-2 shadow-neon"
+              >
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>SEND TRANSMISSION</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="border-t border-cyber-border/40 py-8 relative z-10 glass-card"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-cyber-muted"
+      >
+        <div>&copy; <span id="year"></span> Dewa Ongky Putra.</div>
+        <div class="flex items-center space-x-2 text-cyber-neon">
+          <span class="w-2 h-2 rounded-full bg-cyber-neon"></span>
+          <span>FULL-STACK & MOBILE DEVELOPER</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const texts = [
+        "Full-Stack Web Developer",
+        "Android & Flutter Developer",
+        "Laravel & CodeIgniter Specialist",
+        "Cybersecurity & AI Enthusiast",
+      ];
+      let count = 0;
+      let index = 0;
+      let currentText = "";
+      let isDeleting = false;
+
+      function typeEffect() {
+        currentText = texts[count];
+
+        if (isDeleting) {
+          index--;
+        } else {
+          index++;
+        }
+
+        document.getElementById("typing-text").textContent = currentText.slice(
+          0,
+          index,
+        );
+
+        let typeSpeed = isDeleting ? 40 : 80;
+
+        if (!isDeleting && index === currentText.length) {
+          typeSpeed = 2200;
+          isDeleting = true;
+        } else if (isDeleting && index === 0) {
+          isDeleting = false;
+          count = (count + 1) % texts.length;
+          typeSpeed = 400;
+        }
+
+        setTimeout(typeEffect, typeSpeed);
+      }
+
+      // 2. Matrix Interactive Particle Canvas Background
+      const canvas = document.getElementById("particleCanvas");
+      const ctx = canvas.getContext("2d");
+      let particles = [];
+
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+
+      class Particle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.size = Math.random() * 2 + 0.5;
+          this.speedX = (Math.random() - 0.5) * 0.5;
+          this.speedY = (Math.random() - 0.5) * 0.5;
+          this.color = "#17d26d";
+          this.alpha = Math.random() * 0.4 + 0.1;
+        }
+
+        update() {
+          this.x += this.speedX;
+          this.y += this.speedY;
+
+          if (this.x > canvas.width) this.x = 0;
+          if (this.x < 0) this.x = canvas.width;
+          if (this.y > canvas.height) this.y = 0;
+          if (this.y < 0) this.y = canvas.height;
+        }
+
+        draw() {
+          ctx.save();
+          ctx.globalAlpha = this.alpha;
+          ctx.fillStyle = this.color;
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.restore();
+        }
+      }
+
+      function initParticles() {
+        particles = [];
+        const count = Math.floor((canvas.width * canvas.height) / 18000);
+        for (let i = 0; i < count; i++) {
+          particles.push(new Particle());
+        }
+      }
+
+      function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        for (let i = 0; i < particles.length; i++) {
+          particles[i].update();
+          particles[i].draw();
+
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+
+            if (dist < 100) {
+              ctx.save();
+              ctx.strokeStyle = "#17d26d";
+              ctx.globalAlpha = (1 - dist / 100) * 0.15;
+              ctx.lineWidth = 0.5;
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.stroke();
+              ctx.restore();
+            }
+          }
+        }
+        requestAnimationFrame(animateParticles);
+      }
+
+      // 3. Form Submission Handling
+      const contactForm = document.getElementById("contactForm");
+      const formFeedback = document.getElementById("formFeedback");
+
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        formFeedback.className =
+          "p-4 rounded text-xs font-mono bg-cyber-neon/10 border border-cyber-neon text-cyber-neon block";
+        formFeedback.innerHTML = `<i class="fa-solid fa-check-circle mr-2"></i> TRANSMISSION RECEIVED! THANK YOU, DEWA WILL GET BACK TO YOU SOON.`;
+
+        contactForm.reset();
+
+        setTimeout(() => {
+          formFeedback.className = "hidden";
+        }, 6000);
+      });
+
+      // Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Initializer on Load
+      window.onload = function () {
+        typeEffect();
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        resizeCanvas();
+        initParticles();
+        animateParticles();
+      };
+
+      window.onresize = function () {
+        resizeCanvas();
+        initParticles();
+      };
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const navLinks = document.querySelectorAll("nav a");
+        const sections = document.querySelectorAll("section, header");
+
+        // Kelas untuk keadaan aktif dan non-aktif
+        const activeClasses = ["text-cyber-neon"];
+        const inactiveClasses = ["text-gray-300"];
+
+        // 1. Fungsi untuk mengubah status visual link navbar
+        function setActiveLink(targetId) {
+          navLinks.forEach((link) => {
+            const href = link.getAttribute("href");
+            if (href === targetId) {
+              link.classList.remove(...inactiveClasses);
+              link.classList.add(...activeClasses);
+            } else {
+              link.classList.remove(...activeClasses);
+              link.classList.add(...inactiveClasses);
+            }
+          });
+        }
+
+        // 2. Handler saat link navbar diklik
+        navLinks.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            const targetId = link.getAttribute("href");
+            setActiveLink(targetId);
+          });
+        });
+
+        // 3. Scrollspy (Otomatis berpindah saat halaman di-scroll)
+        window.addEventListener("scroll", () => {
+          let currentSectionId = "#home";
+          const scrollPosition = window.scrollY + 200; // Offset untuk penyesuaian header fixed
+
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const id = section.getAttribute("id");
+
+            if (
+              id &&
+              scrollPosition >= sectionTop &&
+              scrollPosition < sectionTop + sectionHeight
+            ) {
+              currentSectionId = `#${id}`;
+            }
+          });
+
+          setActiveLink(currentSectionId);
+        });
+      });
+    </script>
+  </body>
 </html>
