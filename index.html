@@ -1183,8 +1183,10 @@
           <!-- Contact Form -->
           <div class="lg:col-span-7">
             <form
-              id="contactForm"
-              class="glass-card p-6 sm:p-8 rounded-xl space-y-5 border border-cyber-border"
+              action="forms/contact.php"
+              method="post"
+              role="form"
+              class="php-email-form glass-card p-6 sm:p-8 rounded-xl space-y-5 border border-cyber-border"
             >
               <div
                 class="font-mono text-sm text-cyber-neon border-b border-cyber-border/40 pb-3 flex items-center justify-between"
@@ -1202,6 +1204,7 @@
                   >
                   <input
                     type="text"
+                    name="name"
                     id="name"
                     required
                     placeholder="John Doe"
@@ -1216,6 +1219,7 @@
                   >
                   <input
                     type="email"
+                    name="email"
                     id="email"
                     required
                     placeholder="john@example.com"
@@ -1232,6 +1236,7 @@
                 >
                 <input
                   type="text"
+                  name="subject"
                   id="subject"
                   required
                   placeholder="Project Inquiry / Opportunity"
@@ -1246,6 +1251,7 @@
                   >MESSAGE *</label
                 >
                 <textarea
+                  name="message"
                   id="message"
                   rows="4"
                   required
@@ -1254,14 +1260,26 @@
                 ></textarea>
               </div>
 
-              <div
-                id="formFeedback"
-                class="hidden p-4 rounded text-xs font-mono"
-              ></div>
+              <!-- Elemen feedback yang wajib ada untuk handler validate.js -->
+              <div class="my-3">
+                <div
+                  class="loading hidden p-3 rounded bg-slate-900 text-slate-400 font-mono text-xs border border-slate-800 mb-2"
+                >
+                  Loading...
+                </div>
+                <div
+                  class="error-message hidden p-3 rounded bg-red-950 text-red-400 font-mono text-xs border border-red-500/50 mb-2"
+                ></div>
+                <div
+                  class="sent-message hidden p-3 rounded bg-emerald-950 text-emerald-400 font-mono text-xs border border-emerald-500/50 mb-2"
+                >
+                  Your message has been sent. Thank you!
+                </div>
+              </div>
 
               <button
                 type="submit"
-                class="w-full py-3.5 rounded bg-cyber-neon text-black font-mono font-bold text-sm hover:bg-cyber-glow transition duration-300 flex items-center justify-center space-x-2 shadow-neon"
+                class="w-full py-3.5 rounded bg-cyber-neon text-black font-mono font-bold text-sm hover:bg-cyber-glow transition duration-300 flex items-center justify-center space-x-2 shadow-neon cursor-pointer"
               >
                 <i class="fa-solid fa-paper-plane"></i>
                 <span>SEND TRANSMISSION</span>
