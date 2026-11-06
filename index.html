@@ -1410,22 +1410,22 @@
       }
 
       // 3. Form Submission Handling
-      const contactForm = document.getElementById("contactForm");
-      const formFeedback = document.getElementById("formFeedback");
+      // const contactForm = document.getElementById("contactForm");
+      // const formFeedback = document.getElementById("formFeedback");
 
-      contactForm.addEventListener("submit", (e) => {
-        e.preventDefault();
+      // contactForm.addEventListener("submit", (e) => {
+      //   e.preventDefault();
 
-        formFeedback.className =
-          "p-4 rounded text-xs font-mono bg-cyber-neon/10 border border-cyber-neon text-cyber-neon block";
-        formFeedback.innerHTML = `<i class="fa-solid fa-check-circle mr-2"></i> TRANSMISSION RECEIVED! THANK YOU, DEWA WILL GET BACK TO YOU SOON.`;
+      //   formFeedback.className =
+      //     "p-4 rounded text-xs font-mono bg-cyber-neon/10 border border-cyber-neon text-cyber-neon block";
+      //   formFeedback.innerHTML = `<i class="fa-solid fa-check-circle mr-2"></i> TRANSMISSION RECEIVED! THANK YOU, DEWA WILL GET BACK TO YOU SOON.`;
 
-        contactForm.reset();
+      //   contactForm.reset();
 
-        setTimeout(() => {
-          formFeedback.className = "hidden";
-        }, 6000);
-      });
+      //   setTimeout(() => {
+      //     formFeedback.className = "hidden";
+      //   }, 6000);
+      // });
 
       // Mobile Menu Toggle
       const mobileMenuBtn = document.getElementById("mobileMenuBtn");
